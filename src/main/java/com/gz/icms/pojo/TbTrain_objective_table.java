@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbTrain_objective_table implements Serializable {
 /*create by gz*/
@@ -8,7 +10,7 @@ public class TbTrain_objective_table implements Serializable {
 
 	private int specialtyid;
 
-	private text content;
+	private String content;
 
 	private String version;
 
@@ -24,37 +26,48 @@ public class TbTrain_objective_table implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getHeader() {
 		return header;
 	}
-	public void setHeader() {
-		this.header=header;
+
+	public void setHeader(String header) {
+		this.header = header;
 	}
+
 	public int getSpecialtyid() {
 		return specialtyid;
 	}
-	public void setSpecialtyid() {
-		this.specialtyid=specialtyid;
+
+	public void setSpecialtyid(int specialtyid) {
+		this.specialtyid = specialtyid;
 	}
-	public text getContent() {
+
+	public String getContent() {
 		return content;
 	}
-	public void setContent() {
-		this.content=content;
+
+	public void setContent(String content) {
+		this.content = content;
 	}
+
 	public String getVersion() {
 		return version;
 	}
-	public void setVersion() {
-		this.version=version;
+
+	public void setVersion(String version) {
+		this.version = version;
 	}
+
 	public String getAuditor() {
 		return auditor;
 	}
-	public void setAuditor() {
-		this.auditor=auditor;
+
+	public void setAuditor(String auditor) {
+		this.auditor = auditor;
 	}
 }

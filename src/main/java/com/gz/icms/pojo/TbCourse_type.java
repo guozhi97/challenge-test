@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbCourse_type implements Serializable {
 /*create by gz*/
@@ -16,13 +18,16 @@ public class TbCourse_type implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getTypename() {
 		return typename;
 	}
-	public void setTypename() {
-		this.typename=typename;
+
+	public void setTypename(String typename) {
+		this.typename = typename;
 	}
 }

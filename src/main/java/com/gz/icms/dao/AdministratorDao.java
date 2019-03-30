@@ -1,6 +1,9 @@
+package com.gz.icms.dao;
 
-import import java.util.List;                    
-import org.apache.ibatis.annotations.Delete;                    
+import java.util.List;
+
+import com.gz.icms.pojo.TbAdministrator;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;                    
 import org.apache.ibatis.annotations.Select;                    
 import org.apache.ibatis.annotations.Update;                    
@@ -11,18 +14,18 @@ public interface AdministratorDao {
 /*create by gz*/
 
 	@Select("select * from administrator ")
-	public List<TbAdministrator> selects() throws Exception;
+	 List<TbAdministrator> selects() throws Exception;
 
-	@Select("select * from administrator where null=#{null}")                      
-	public TbAdministrator selectById(String null) throws Exception;
+	@Select("select * from administrator where id=#{id}")
+	 TbAdministrator selectById(String id) throws Exception;
 
-	@Delete("delete from administrator where null=#{null}")                      
-	public Boolean delete(String null) throws Exception;
+	@Delete("delete from administrator where id=#{id}")
+	 Boolean delete(String id) throws Exception;
 
 	@Insert("insert into administrator(id,name,password,email,tell) values(#{id},#{name},#{password},#{email},#{tell})")                     
-	public Boolean insert(TbAdministrator administrator) throws Exception;
+	 Boolean insert(TbAdministrator administrator) throws Exception;
 
 	@Update("update administrator set  id=#{id}, name=#{name}, password=#{password}, email=#{email}, tell=#{tell} where null=#{null}")                     
-	public Boolean update(TbAdministrator administrator) throws Exception;
+	 Boolean update(TbAdministrator administrator) throws Exception;
 
 }

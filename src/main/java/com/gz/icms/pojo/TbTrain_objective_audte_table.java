@@ -1,4 +1,8 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
+import java.util.Date;
+
 public class TbTrain_objective_audte_table implements Serializable {
 /*create by gz*/
 
@@ -10,7 +14,7 @@ public class TbTrain_objective_audte_table implements Serializable {
 
 	private String outcome;
 
-	private date time;
+	private Date time;
 
 	public TbTrain_objective_audte_table() {}
 
@@ -22,31 +26,40 @@ public class TbTrain_objective_audte_table implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getAuditor() {
 		return auditor;
 	}
-	public void setAuditor() {
-		this.auditor=auditor;
+
+	public void setAuditor(String auditor) {
+		this.auditor = auditor;
 	}
+
 	public int getTrainobjectiveid() {
 		return trainobjectiveid;
 	}
-	public void setTrainobjectiveid() {
-		this.trainobjectiveid=trainobjectiveid;
+
+	public void setTrainobjectiveid(int trainobjectiveid) {
+		this.trainobjectiveid = trainobjectiveid;
 	}
+
 	public String getOutcome() {
 		return outcome;
 	}
-	public void setOutcome() {
-		this.outcome=outcome;
+
+	public void setOutcome(String outcome) {
+		this.outcome = outcome;
 	}
-	public date getTime() {
+
+	public Date getTime() {
 		return time;
 	}
-	public void setTime() {
-		this.time=time;
+
+	public void setTime(Date time) {
+		this.time = time;
 	}
 }

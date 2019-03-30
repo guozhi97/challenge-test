@@ -1,4 +1,8 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
+import java.util.Date;
+
 public class TbTask_records implements Serializable {
 /*create by gz*/
 
@@ -8,7 +12,7 @@ public class TbTask_records implements Serializable {
 
 	private String studentid;
 
-	private datetime finishedtime;
+	private Date finishedtime;
 
 	public TbTask_records() {}
 
@@ -20,25 +24,32 @@ public class TbTask_records implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public int getTaskid() {
 		return taskid;
 	}
-	public void setTaskid() {
-		this.taskid=taskid;
+
+	public void setTaskid(int taskid) {
+		this.taskid = taskid;
 	}
+
 	public String getStudentid() {
 		return studentid;
 	}
-	public void setStudentid() {
-		this.studentid=studentid;
+
+	public void setStudentid(String studentid) {
+		this.studentid = studentid;
 	}
-	public datetime getFinishedtime() {
+
+	public Date getFinishedtime() {
 		return finishedtime;
 	}
-	public void setFinishedtime() {
-		this.finishedtime=finishedtime;
+
+	public void setFinishedtime(Date finishedtime) {
+		this.finishedtime = finishedtime;
 	}
 }

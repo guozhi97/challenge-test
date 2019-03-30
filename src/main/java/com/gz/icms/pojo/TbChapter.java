@@ -1,4 +1,8 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
+import java.util.Date;
+
 public class TbChapter implements Serializable {
 /*create by gz*/
 
@@ -8,9 +12,9 @@ public class TbChapter implements Serializable {
 
 	private String title;
 
-	private text content;
+	private String content;
 
-	private datetime time;
+	private Date time;
 
 	public TbChapter() {}
 
@@ -22,31 +26,40 @@ public class TbChapter implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public int getClassid() {
 		return classid;
 	}
-	public void setClassid() {
-		this.classid=classid;
+
+	public void setClassid(int classid) {
+		this.classid = classid;
 	}
+
 	public String getTitle() {
 		return title;
 	}
-	public void setTitle() {
-		this.title=title;
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public text getContent() {
+
+	public String getContent() {
 		return content;
 	}
-	public void setContent() {
-		this.content=content;
+
+	public void setContent(String content) {
+		this.content = content;
 	}
-	public datetime getTime() {
+
+	public Date getTime() {
 		return time;
 	}
-	public void setTime() {
-		this.time=time;
+
+	public void setTime(Date time) {
+		this.time = time;
 	}
 }

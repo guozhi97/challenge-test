@@ -1,28 +1,31 @@
+package com.gz.icms.dao;
 
-import import java.util.List;                    
-import org.apache.ibatis.annotations.Delete;                    
-import org.apache.ibatis.annotations.Insert;                    
-import org.apache.ibatis.annotations.Select;                    
-import org.apache.ibatis.annotations.Update;                    
+import com.gz.icms.pojo.TbClass;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository("classDao")
-public interface ClassDao {
+ public interface ClassDao {
 /*create by gz*/
 
 	@Select("select * from class ")
-	public List<TbClass> selects() throws Exception;
+	 List<TbClass> selects() throws Exception;
 
 	@Select("select * from class where id=#{id}")                      
-	public TbClass selectById(int id) throws Exception;
+	 TbClass selectById(int id) throws Exception;
 
 	@Delete("delete from class where id=#{id}")                      
-	public Boolean delete(int id) throws Exception;
+	 Boolean delete(int id) throws Exception;
 
 	@Insert("insert into class(id,name,teacherid,courseid) values(#{id},#{name},#{teacherid},#{courseid})")                     
-	public Boolean insert(TbClass class) throws Exception;
+	 Boolean insert(TbClass cls) throws Exception;
 
 	@Update("update class set  id=#{id}, name=#{name}, teacherid=#{teacherid}, courseid=#{courseid} where id=#{id}")                     
-	public Boolean update(TbClass class) throws Exception;
+	 Boolean update(TbClass cls) throws Exception;
 
 }

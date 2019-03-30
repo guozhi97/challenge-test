@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbAcademy implements Serializable {
 /*create by gz*/
@@ -20,25 +22,32 @@ public class TbAcademy implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
-	public void setName() {
-		this.name=name;
+
+	public void setName(String name) {
+		this.name = name;
 	}
+
 	public String getSchool() {
 		return school;
 	}
-	public void setSchool() {
-		this.school=school;
+
+	public void setSchool(String school) {
+		this.school = school;
 	}
+
 	public String getAuditor() {
 		return auditor;
 	}
-	public void setAuditor() {
-		this.auditor=auditor;
+
+	public void setAuditor(String auditor) {
+		this.auditor = auditor;
 	}
 }

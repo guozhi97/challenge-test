@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbTeacher implements Serializable {
 /*create by gz*/
@@ -24,37 +26,48 @@ public class TbTeacher implements Serializable {
 	public String getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(String id) {
+		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
-	public void setName() {
-		this.name=name;
+
+	public void setName(String name) {
+		this.name = name;
 	}
+
 	public String getPassword() {
 		return password;
 	}
-	public void setPassword() {
-		this.password=password;
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
 	public String getEmail() {
 		return email;
 	}
-	public void setEmail() {
-		this.email=email;
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
+
 	public String getAcademic() {
 		return academic;
 	}
-	public void setAcademic() {
-		this.academic=academic;
+
+	public void setAcademic(String academic) {
+		this.academic = academic;
 	}
+
 	public String getTell() {
 		return tell;
 	}
-	public void setTell() {
-		this.tell=tell;
+
+	public void setTell(String tell) {
+		this.tell = tell;
 	}
 }

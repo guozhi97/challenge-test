@@ -1,4 +1,8 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
+import java.util.Date;
+
 public class TbSum_train_plan_table implements Serializable {
 /*create by gz*/
 
@@ -10,7 +14,7 @@ public class TbSum_train_plan_table implements Serializable {
 
 	private int trainobjectiveid;
 
-	private date maketime;
+	private Date maketime;
 
 	public TbSum_train_plan_table() {}
 
@@ -22,31 +26,40 @@ public class TbSum_train_plan_table implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getHeader() {
 		return header;
 	}
-	public void setHeader() {
-		this.header=header;
+
+	public void setHeader(String header) {
+		this.header = header;
 	}
+
 	public String getAuditor() {
 		return auditor;
 	}
-	public void setAuditor() {
-		this.auditor=auditor;
+
+	public void setAuditor(String auditor) {
+		this.auditor = auditor;
 	}
+
 	public int getTrainobjectiveid() {
 		return trainobjectiveid;
 	}
-	public void setTrainobjectiveid() {
-		this.trainobjectiveid=trainobjectiveid;
+
+	public void setTrainobjectiveid(int trainobjectiveid) {
+		this.trainobjectiveid = trainobjectiveid;
 	}
-	public date getMaketime() {
+
+	public Date getMaketime() {
 		return maketime;
 	}
-	public void setMaketime() {
-		this.maketime=maketime;
+
+	public void setMaketime(Date maketime) {
+		this.maketime = maketime;
 	}
 }

@@ -1,4 +1,8 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
+import java.util.Date;
+
 public class TbSignature implements Serializable {
 /*create by gz*/
 
@@ -10,7 +14,7 @@ public class TbSignature implements Serializable {
 
 	private int period;
 
-	private datetime time;
+	private Date time;
 
 	private int state;
 
@@ -24,37 +28,48 @@ public class TbSignature implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getStudentid() {
 		return studentid;
 	}
-	public void setStudentid() {
-		this.studentid=studentid;
+
+	public void setStudentid(String studentid) {
+		this.studentid = studentid;
 	}
+
 	public int getChapterid() {
 		return chapterid;
 	}
-	public void setChapterid() {
-		this.chapterid=chapterid;
+
+	public void setChapterid(int chapterid) {
+		this.chapterid = chapterid;
 	}
+
 	public int getPeriod() {
 		return period;
 	}
-	public void setPeriod() {
-		this.period=period;
+
+	public void setPeriod(int period) {
+		this.period = period;
 	}
-	public datetime getTime() {
+
+	public Date getTime() {
 		return time;
 	}
-	public void setTime() {
-		this.time=time;
+
+	public void setTime(Date time) {
+		this.time = time;
 	}
+
 	public int getState() {
 		return state;
 	}
-	public void setState() {
-		this.state=state;
+
+	public void setState(int state) {
+		this.state = state;
 	}
 }

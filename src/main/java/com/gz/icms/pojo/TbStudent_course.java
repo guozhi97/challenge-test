@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbStudent_course implements Serializable {
 /*create by gz*/
@@ -18,19 +20,24 @@ public class TbStudent_course implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getStudentid() {
 		return studentid;
 	}
-	public void setStudentid() {
-		this.studentid=studentid;
+
+	public void setStudentid(String studentid) {
+		this.studentid = studentid;
 	}
+
 	public int getClassid() {
 		return classid;
 	}
-	public void setClassid() {
-		this.classid=classid;
+
+	public void setClassid(int classid) {
+		this.classid = classid;
 	}
 }

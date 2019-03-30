@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbSpecialty implements Serializable {
 /*create by gz*/
@@ -20,25 +22,32 @@ public class TbSpecialty implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public String getHeader() {
 		return header;
 	}
-	public void setHeader() {
-		this.header=header;
+
+	public void setHeader(String header) {
+		this.header = header;
 	}
+
 	public String getName() {
 		return name;
 	}
-	public void setName() {
-		this.name=name;
+
+	public void setName(String name) {
+		this.name = name;
 	}
+
 	public String getExplain() {
 		return explain;
 	}
-	public void setExplain() {
-		this.explain=explain;
+
+	public void setExplain(String explain) {
+		this.explain = explain;
 	}
 }

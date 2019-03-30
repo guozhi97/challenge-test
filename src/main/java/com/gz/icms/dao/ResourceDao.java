@@ -1,28 +1,31 @@
+package com.gz.icms.dao;
 
-import import java.util.List;                    
-import org.apache.ibatis.annotations.Delete;                    
-import org.apache.ibatis.annotations.Insert;                    
-import org.apache.ibatis.annotations.Select;                    
-import org.apache.ibatis.annotations.Update;                    
+import com.gz.icms.pojo.TbResource;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository("resourceDao")
 public interface ResourceDao {
 /*create by gz*/
 
 	@Select("select * from resource ")
-	public List<TbResource> selects() throws Exception;
+	 List<TbResource> selects() throws Exception;
 
 	@Select("select * from resource where id=#{id}")                      
-	public TbResource selectById(int id) throws Exception;
+	 TbResource selectById(int id) throws Exception;
 
 	@Delete("delete from resource where id=#{id}")                      
-	public Boolean delete(int id) throws Exception;
+	 Boolean delete(int id) throws Exception;
 
 	@Insert("insert into resource(id,chapterid,description,path) values(#{id},#{chapterid},#{description},#{path})")                     
-	public Boolean insert(TbResource resource) throws Exception;
+	 Boolean insert(TbResource resource) throws Exception;
 
 	@Update("update resource set  id=#{id}, chapterid=#{chapterid}, description=#{description}, path=#{path} where id=#{id}")                     
-	public Boolean update(TbResource resource) throws Exception;
+	 Boolean update(TbResource resource) throws Exception;
 
 }

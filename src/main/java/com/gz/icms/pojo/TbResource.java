@@ -1,3 +1,5 @@
+package com.gz.icms.pojo;
+
 import java.io.Serializable;
 public class TbResource implements Serializable {
 /*create by gz*/
@@ -20,25 +22,32 @@ public class TbResource implements Serializable {
 	public int getId() {
 		return id;
 	}
-	public void setId() {
-		this.id=id;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
 	public int getChapterid() {
 		return chapterid;
 	}
-	public void setChapterid() {
-		this.chapterid=chapterid;
+
+	public void setChapterid(int chapterid) {
+		this.chapterid = chapterid;
 	}
+
 	public String getDescription() {
 		return description;
 	}
-	public void setDescription() {
-		this.description=description;
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
+
 	public String getPath() {
 		return path;
 	}
-	public void setPath() {
-		this.path=path;
+
+	public void setPath(String path) {
+		this.path = path;
 	}
 }

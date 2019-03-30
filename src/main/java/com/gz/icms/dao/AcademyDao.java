@@ -1,28 +1,31 @@
+package com.gz.icms.dao;
 
-import import java.util.List;                    
-import org.apache.ibatis.annotations.Delete;                    
-import org.apache.ibatis.annotations.Insert;                    
-import org.apache.ibatis.annotations.Select;                    
-import org.apache.ibatis.annotations.Update;                    
+import com.gz.icms.pojo.TbAcademy;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository("academyDao")
-public interface AcademyDao {
+ public interface AcademyDao {
 /*create by gz*/
 
 	@Select("select * from academy ")
-	public List<TbAcademy> selects() throws Exception;
+	 List<TbAcademy> selects() throws Exception;
 
 	@Select("select * from academy where id=#{id}")                      
-	public TbAcademy selectById(int id) throws Exception;
+	 TbAcademy selectById(int id) throws Exception;
 
 	@Delete("delete from academy where id=#{id}")                      
-	public Boolean delete(int id) throws Exception;
+	 Boolean delete(int id) throws Exception;
 
 	@Insert("insert into academy(id,name,school,auditor) values(#{id},#{name},#{school},#{auditor})")                     
-	public Boolean insert(TbAcademy academy) throws Exception;
+	 Boolean insert(TbAcademy academy) throws Exception;
 
 	@Update("update academy set  id=#{id}, name=#{name}, school=#{school}, auditor=#{auditor} where id=#{id}")                     
-	public Boolean update(TbAcademy academy) throws Exception;
+	 Boolean update(TbAcademy academy) throws Exception;
 
 }
