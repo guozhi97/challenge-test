@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbResource {
+import java.io.Serializable;
+
+public class TbResource implements Serializable {
     
     
     private Integer id;

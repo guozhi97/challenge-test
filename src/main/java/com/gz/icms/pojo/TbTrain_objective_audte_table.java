@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbTrain_objective_audte_table {
+import java.io.Serializable;
+
+public class TbTrain_objective_audte_table implements Serializable {
     
     
     private Integer id;

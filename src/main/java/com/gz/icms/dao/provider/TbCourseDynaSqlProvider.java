@@ -1,7 +1,8 @@
 package com.gz.icms.dao.provider;
 
-import com.gz.icms.pojo.TbCourse;
 import org.apache.ibatis.jdbc.SQL;
+
+import com.gz.icms.pojo.TbCourse;
 
 public class TbCourseDynaSqlProvider {
     

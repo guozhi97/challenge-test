@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbCourse_task {
+import java.io.Serializable;
+
+public class TbCourse_task implements Serializable {
     
     
     private Integer id;

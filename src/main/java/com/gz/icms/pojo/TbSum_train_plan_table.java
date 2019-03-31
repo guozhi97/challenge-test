@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbSum_train_plan_table {
+import java.io.Serializable;
+
+public class TbSum_train_plan_table implements Serializable {
     
     
     private Integer id;

@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbSignature {
+import java.io.Serializable;
+
+public class TbSignature implements Serializable {
     
     
     private Integer id;

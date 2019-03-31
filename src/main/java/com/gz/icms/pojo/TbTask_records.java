@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbTask_records {
+import java.io.Serializable;
+
+public class TbTask_records implements Serializable {
     
     
     private Integer id;

@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbChapter {
+import java.io.Serializable;
+
+public class TbChapter implements Serializable {
     
     
     private Integer id;

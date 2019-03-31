@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbAcademy {
+import java.io.Serializable;
+
+public class TbAcademy implements Serializable {
     
     
     private Integer id;

@@ -2,6 +2,8 @@ package com.gz.icms.dao.provider;
 
 import org.apache.ibatis.jdbc.SQL;
 
+import com.gz.icms.pojo.TbChapter;
+
 public class TbChapterDynaSqlProvider {
     
     // 动态查询

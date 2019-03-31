@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbPerfession_certify_table {
+import java.io.Serializable;
+
+public class TbPerfession_certify_table implements Serializable {
     
     
     private Integer id;

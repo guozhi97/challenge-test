@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbStudent {
+import java.io.Serializable;
+
+public class TbStudent implements Serializable {
     
     
     private String id;

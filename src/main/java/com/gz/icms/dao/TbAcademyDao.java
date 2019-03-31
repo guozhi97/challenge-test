@@ -2,12 +2,13 @@ package com.gz.icms.dao;
 
 import java.util.List;
 
-import com.gz.icms.pojo.TbAcademy;
 import org.apache.ibatis.annotations.Select;
 
 import org.apache.ibatis.annotations.SelectProvider;
 
 import com.gz.icms.dao.provider.TbAcademyDynaSqlProvider;
+
+import com.gz.icms.pojo.TbAcademy;
 
 public interface TbAcademyDao {
     

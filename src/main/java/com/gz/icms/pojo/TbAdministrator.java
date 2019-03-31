@@ -1,6 +1,8 @@
 package com.gz.icms.pojo;
 
-public class TbAdministrator {
+import java.io.Serializable;
+
+public class TbAdministrator implements Serializable {
     
     
     private Integer id;
