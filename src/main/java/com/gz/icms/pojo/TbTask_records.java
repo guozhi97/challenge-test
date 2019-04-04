@@ -1,42 +1,52 @@
-package com.gz.icms.pojo;
-
+/* create by gz */
 import java.io.Serializable;
 
 public class TbTask_records implements Serializable {
-    
-    
-    private Integer id;
-    private Integer taskid;
-    private String studentid;
-    
-    public TbTask_records(){
-    }
-    public TbTask_records(Integer id, Integer taskid, String studentid) {
-        super();this.id = id;
-        this.taskid = taskid;
-        this.studentid = studentid;
-    }
-    
-    public Integer getId() {
-        return id;
-    }
-    public void setId(Integer id){
-        this.id = id;
-    }
-    public Integer getTaskid() {
-        return taskid;
-    }
-    public void setTaskid(Integer taskid){
-        this.taskid = taskid;
-    }
-    public String getStudentid() {
-        return studentid;
-    }
-    public void setStudentid(String studentid){
-        this.studentid = studentid;
-    }
-    @Override
-    public String toString() {
-        return"task_records [id=" + id+ ", taskid=" +taskid+ ", studentid=" +studentid + "]";
-    }
+
+	private int id;
+
+	private int taskid;
+
+	private String studentid;
+
+	private java.sql.Timestamp finishedtime;
+
+	public TbTask_records() {}
+
+	@Override
+	public String toString(){
+		return "TbTask_records [ id=" + id + ",taskid=" + taskid + ",studentid=" + studentid + ",finishedtime=" + finishedtime + " ];
+	}
+	public int getId() {
+		return id;
+	}
+
+	public void setId( int id) {
+		this.id = id;
+	}
+
+	public int getTaskid() {
+		return taskid;
+	}
+
+	public void setTaskid( int taskid) {
+		this.taskid = taskid;
+	}
+
+	public String getStudentid() {
+		return studentid;
+	}
+
+	public void setStudentid( String studentid) {
+		this.studentid = studentid;
+	}
+
+	public java.sql.Timestamp getFinishedtime() {
+		return finishedtime;
+	}
+
+	public void setFinishedtime( java.sql.Timestamp finishedtime) {
+		this.finishedtime = finishedtime;
+	}
+
 }

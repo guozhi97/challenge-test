@@ -1,50 +1,52 @@
-package com.gz.icms.pojo;
-
+/* create by gz */
 import java.io.Serializable;
 
 public class TbClass implements Serializable {
-    
-    
-    private Integer id;
-    private String name;
-    private String teacherid;
-    private Integer courseid;
-    
-    public TbClass(){
-    }
-    public TbClass(Integer id, String name, String teacherid, Integer courseid) {
-        super();this.id = id;
-        this.name = name;
-        this.teacherid = teacherid;
-        this.courseid = courseid;
-    }
-    
-    public Integer getId() {
-        return id;
-    }
-    public void setId(Integer id){
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name){
-        this.name = name;
-    }
-    public String getTeacherid() {
-        return teacherid;
-    }
-    public void setTeacherid(String teacherid){
-        this.teacherid = teacherid;
-    }
-    public Integer getCourseid() {
-        return courseid;
-    }
-    public void setCourseid(Integer courseid){
-        this.courseid = courseid;
-    }
-    @Override
-    public String toString() {
-        return"class [id=" + id+ ", name=" +name+ ", teacherid=" +teacherid+ ", courseid=" +courseid + "]";
-    }
+
+	private int id;
+
+	private String name;
+
+	private String teacherid;
+
+	private int courseid;
+
+	public TbClass() {}
+
+	@Override
+	public String toString(){
+		return "TbClass [ id=" + id + ",name=" + name + ",teacherid=" + teacherid + ",courseid=" + courseid + " ];
+	}
+	public int getId() {
+		return id;
+	}
+
+	public void setId( int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName( String name) {
+		this.name = name;
+	}
+
+	public String getTeacherid() {
+		return teacherid;
+	}
+
+	public void setTeacherid( String teacherid) {
+		this.teacherid = teacherid;
+	}
+
+	public int getCourseid() {
+		return courseid;
+	}
+
+	public void setCourseid( int courseid) {
+		this.courseid = courseid;
+	}
+
 }
